@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+div.container#textAreaHolder{
+    width: calc(100% - 330px);
+    height: calc(100% - 39px);
+    display: inline-flex;
+    flex-direction: column;
+    margin: calc(0px + 57px) calc(0px + 142px) calc(0px + 82px) calc(0px + 188px);
+    font-family: 'Work Sans', sans-serif;
+}
+
+div.container#textAreaHolder > div.container#repoAreaHolder{
+    width: calc(100% - 330px);
+    height: calc(100% - 943px);
+    margin: calc(0px + 96px) calc(0px + 694px) calc(0px + 114.17px) calc(0px + 55px);
+    font-size: 14px;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 30.83px;
+}
+
+div.container#textAreaHolder > div.container#repoAreaHolder > div.container#report > p{
+    font-weight: 600;
+}
+
+div.container#textAreaHolder > div.container#repoAreaHolder > div.container#emailAdd{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+}
+
+div.container#textAreaHolder > div.container#repoAreaHolder > div.container#emailAdd > input[type=email]{
+    width: 240px;
+    height: 32px;
+    border: 1px solid rgba(123,123,123,1);
+    border-radius: 4px;
+    margin-left: calc(0px + 27px);
+    margin-right: calc(0px + 130px);
+}
+
+div.container#textAreaHolder > p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: calc(0px + 47.17px) calc(0px + 743px) calc(0px + 21.83px) calc(0px + 55px);
+}
+
+div.container#textAreaHolder > div.container#emailPre{
+    width: calc(100% - 384px);
+    height: calc(100% - 346px);
+    border: 1px solid rgba(123,123,123,1);
+    display: inline-flex;
+    flex-direction: column;
+}
+
+div.container#textAreaHolder > div.container#emailPre > p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    color: rgba(123,123,123,1);
+    font-weight: 400;
+    margin: calc(0px + 35px) calc(0px + 214px ) calc(0px + 40px) calc(0px + 46px);
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#bioPre{
+    width: calc(100% - 496.47px);
+    height: calc(100% - 970px);
+    margin: calc( 0px + 40px) calc( 0px + 242.47px) calc( 0px + 15px) calc( 0px + 46px);
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#bioPre > div > p{
+    font-weight: 600;
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#bioPre > div > p > span#special{
+    font-weight: 500;
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#bioPre > div#secondColumn{
+    display: inline-flex;
+    flex-direction: column-reverse;
+    
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#bioPre > div#thirdColumn{
+    display: inline-flex;
+    flex-direction: column-reverse;
+    
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.rectangle#hLine{
+    width: calc(100% - 453px);
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin-left: calc(46px);
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#GoalsPre{
+    width: calc(100% - 496.47px);
+    height: calc(100% - 970px);
+    margin: calc( 0px + 40px) calc( 0px + 242.47px) calc( 0px + 15px) calc( 0px + 46px);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 14px;
+    row-gap: 46px;
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#GoalsPre > div.container#firstRow{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#GoalsPre > div.container#secondRow{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre{
+    width: calc(100% - 490px);
+    height: calc(100% - 887px);
+    margin: calc(0px + 39px) calc(0px + 63px) calc(0px + 32px) calc(0px + 43px);
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow1{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 28px;
+}
+div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow2{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+} 
+div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow3{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+} 
+div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow4{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+} 
+div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow5{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(231, 231, 231, 1);
+}  
+div.container#textAreaHolder > div.container#emailPre > div.container#tradeMark{
+    width: calc(100% - 880)px;
+    height: 28px;
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: calc(42px);
+    margin-bottom: calc(35px);
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(231, 231, 231, 1);
+}
+
+button{
+    width: 204px;
+    height: 25px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+p#bold{
+    font-weight: 600;
+}
+
+@media only screen and (max-width : 450px){
+    div.container#textAreaHolder{
+        width: 250px;
+        height: 950px;
+        display: inline-flex;
+        flex-direction: column;
+        position: absolute;
+        margin: -25px 145px 146px 110px;
+        font-family: 'Work Sans', sans-serif;
+    }
+    
+    div.container#textAreaHolder > div.container#repoAreaHolder{
+        width: 250px;
+        height: calc(100% - 943px);
+        font-size: 14px;
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: -10px;
+        row-gap: 30.83px;
+    }
+    
+    div.container#textAreaHolder > div.container#repoAreaHolder > div.container#report > p{
+        font-weight: 600;
+    }
+    
+    div.container#textAreaHolder > div.container#repoAreaHolder > div.container#emailAdd{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        align-items: center;
+    }
+    
+    div.container#textAreaHolder > div.container#repoAreaHolder > div.container#emailAdd > input[type=email]{
+        width: 200px;
+        height: 32px;
+        border: 1px solid rgba(123,123,123,1);
+        border-radius: 4px;
+        margin-left: 130px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+    div.container#textAreaHolder > p{
+        width: 100px;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-flex;
+        margin-top: 55px;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre{
+        width: 245px;
+        height: 1160px;
+        border: 1px solid rgba(123,123,123,1);
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: -5px;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > p{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+        width: 125px;
+        color: rgba(123,123,123,1);
+        font-weight: 400;
+        
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.container#bioPre{
+        width: 175px;
+        height: 250px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 14px;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.container#bioPre > div > p{
+        font-weight: 600;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.container#bioPre > div > p > span#special{
+        font-weight: 500;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.container#bioPre > div#secondColumn{
+        display: inline-flex;
+        flex-direction: column-reverse;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.container#bioPre > div#thirdColumn{
+        display: inline-flex;
+        flex-direction: column-reverse;
+        
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.rectangle#hLine{
+        width: calc(100% - 453px);
+        border: 1px solid rgba(0, 0, 0, 1);
+        margin-left: calc(46px);
+    }
+
+    div.container#textAreaHolder > div.container#emailPre > div.container#GoalsPre{
+        width: 225px;
+        height: 250px;
+        margin-left: 5px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 14px;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.container#GoalsPre > div.container#firstRow{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.container#GoalsPre > div.container#secondRow{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre{
+        width: 240px;
+        height: 500px;
+        margin: 5px;
+        display: inline-flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    
+    div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow1{
+        display: inline-flex;
+        flex-direction: row;
+        gap: 75px;
+    }
+    div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow2{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(231, 231, 231, 1);
+        gap: 20px;
+    } 
+    div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow3{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(231, 231, 231, 1);
+        gap: 20px;
+    } 
+    div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow4{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(231, 231, 231, 1);
+        gap: 20px;
+    } 
+    div.container#textAreaHolder > div.container#emailPre > div.container#PerInfoPre > div.container#PerInfoPreRow5{
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(231, 231, 231, 1);
+        gap: 20px;
+    }  
+    div.container#textAreaHolder > div.container#emailPre > div.container#tradeMark{
+        width: 150px;
+        height: 28px;
+        display: inline-flex;
+        flex-direction: column;
+        margin-left: calc(42px);
+        margin-bottom: calc(35px);
+        font-size: 12px;
+        font-weight: 700;
+        color: rgba(123, 123, 123, 1);
+        border: 1px solid salmon;
+    }
+}

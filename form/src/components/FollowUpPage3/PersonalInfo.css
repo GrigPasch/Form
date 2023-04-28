@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+body{
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(0, 0, 0, 1);
+  }
+
+div.container#formHolder{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 721px;
+    height: 1189px;
+    row-gap: 50px;
+    margin: 72px 145px 146px 158px;
+}
+
+div.container#formHolder > div.container#firstHalf{
+    width: 721px;
+    height: 717px;
+    background-color: rgba(231, 231, 231, 1);
+    border-radius: 16px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div.container#formHolder > div.container#firstHalf > div.container#firstHalfLeftSide{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.container#formHolder > div.container#firstHalf > div.container#firstHalfLeftSide > div > div.whatIsThis#first{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.container#formHolder > div.container#firstHalf > div.container#firstHalfLeftSide > div.whatIsThis#second{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+div.container#formHolder > div.container#firstHalf > div.container#firstHalfLeftSide > div.whatIsThis#second > input[type=text]{
+    width: 347px;
+    height: 68px;
+}
+
+div.container#formHolder > div.container#firstHalf > div.container#firstHalfLeftSide > div > div.whatIsThis#third{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container#formHolder > div.container#firstHalf > div.container#firstHalfLeftSide > div > div.whatIsThis#fourth{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container#formHolder > div.container#firstHalf > div.container#firstHalfLeftSide > div > div.whatIsThis#fifth{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+}
+div.container#formHolder > div.container#firstHalf > div.container#firstHalfOldValues{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(123, 123, 123, 1);
+    font-weight: 400;
+}
+
+div.container#formHolder > div.container#firstHalf > div.container#firstHalfOldValues >  div.whatIsThis#sixth{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+div.container#formHolder > div.container#secondHalf{
+    width: 721px;
+    height: 414px;
+    background-color: rgba(231, 231, 231, 1);
+    border-radius: 16px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#seventh > span{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#eight{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#eight > input[type=text]{
+    width: 347px;
+    height: 68px;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#nineth{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#nineth > input[type=text]{
+    width: 80px;
+    height: 32px;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#tenth{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#tenth > input[type=text]{
+    width: 347px;
+    height: 68px;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#eleventh{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#eleventh > input[type=text]{
+    width: 80px;
+    height: 32px;
+}
+
+div.container#formHolder > div.container#secondHalf > div.container#secondHalfOldValues{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    color: rgba(123, 123, 123, 1);
+}
+
+input[type=text]{
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    border: 1px solid #7b7b7b;
+}
+
+input[type=checkbox]{
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+@media only screen and (max-width : 450px){
+    div.container#formHolder{
+        display: inline-flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 275px;
+        height: 950px;
+        margin: 72px 145px 146px 110px;
+    }
+
+    div.container#formHolder > div.container#firstHalf{
+        width: 275px;
+        height: 555px;
+        background-color: rgba(231, 231, 231, 1);
+        border-radius: 16px;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    div.container#formHolder > div.container#firstHalf > div.container#firstHalfLeftSide{
+        width: 275px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+    }
+
+    div.container#formHolder > div.container#firstHalf > div.container#firstHalfLeftSide > div.whatIsThis#second > input[type=text]{
+        width: 265px;
+        height: 68px;
+    }
+
+    div.container#formHolder > div.container#secondHalf{
+        width: 275px;
+        height: 350px;
+        background-color: rgba(231, 231, 231, 1);
+        border-radius: 16px;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 25px;
+    }
+
+    div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide{
+        width: 275px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+    }
+
+    div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#eight > input[type=text]{
+        width: 265px;
+        height: 68px;
+    }
+
+    div.container#formHolder > div.container#secondHalf > div.container#secondHalfLeftSide >  div.whatIsThis#tenth > input[type=text]{
+        width: 265px;
+        height: 68px;
+    }
+
+    div.container#formHolder > div.container#firstHalf > div.container#firstHalfOldValues{
+        display: none;
+    }
+
+    div.container#formHolder > div.container#secondHalf > div.container#secondHalfOldValues{
+        display: none;
+    }
+
+    
+}
