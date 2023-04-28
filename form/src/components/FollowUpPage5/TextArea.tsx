@@ -1,7 +1,6 @@
 import React from 'react'
 import './TextArea5.css'
 import { useNavigate } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 
 const TextArea = () => {
   const navigate = useNavigate();
@@ -91,11 +90,6 @@ const TextArea = () => {
           <p>Are you as active as you want to be<br/>life?</p>
             <p>No</p>
           </div>
-          
-        </div>
-        <div className='container' id='tradeMark'>
-          <span>Thor Solutions</span>
-          <span>www.thor-solutions.com</span>
         </div>
       </div>
     </div>
