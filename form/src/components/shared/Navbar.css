@@ -1,68 +1,68 @@
 .navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 56px;
-  background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 32px;
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    z-index: 100;
 }
 
 .navbar__brand {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .navbar__brand-mark {
-  color: var(--color-accent);
-  font-size: 16px;
+    color: var(--color-accent);
+    font-size: 16px;
 }
 
 .navbar__brand-name {
-  font-family: var(--font-serif);
-  font-size: 17px;
-  color: var(--color-text);
-  letter-spacing: -0.3px;
+    font-family: var(--font-serif);
+    font-size: 17px;
+    color: var(--color-text);
+    letter-spacing: -0.3px;
 }
 
 .navbar__meta {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .navbar__consultation {
-  font-size: 13px;
-  color: var(--color-text-muted);
-  font-weight: 400;
+    font-size: 13px;
+    color: var(--color-text-muted);
+    font-weight: 400;
 }
 
 .navbar__history-btn {
-  background: none;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-sm);
-  padding: 4px 12px;
-  font-size: 13px;
-  color: var(--color-text);
-  transition: all var(--transition);
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 4px 12px;
+    font-size: 13px;
+    color: var(--color-text);
+    transition: all var(--transition);
 }
 
 .navbar__history-btn:hover {
-  background: var(--color-surface-muted);
-  border-color: var(--color-text-muted);
+    background: var(--color-surface-muted);
+    border-color: var(--color-text-muted);
 }
 
 @media (max-width: 600px) {
-  .navbar {
-    padding: 0 16px;
-  }
-  .navbar__consultation {
-    display: none;
-  }
+    .navbar {
+        padding: 0 16px;
+    }
+    .navbar__consultation {
+        display: none;
+    }
 }
