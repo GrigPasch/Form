@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-sans: 'DM Sans', sans-serif;
+    --font-serif: 'DM Serif Display', serif;
+
+    --color-bg: #f7f6f3;
+    --color-surface: #ffffff;
+    --color-surface-muted: #efefeb;
+    --color-border: #d4d2cc;
+    --color-text: #1a1a18;
+    --color-text-muted: #8a8880;
+    --color-accent: #2d5a3d;
+    --color-accent-light: #e8f0ea;
+    --color-danger: #c0392b;
+
+    --radius-sm: 6px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 16px rgba(0,0,0,0.08), 0 2px 4px rgba(0,0,0,0.04);
+
+    --transition: 160ms ease;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+}
+
+input, button, textarea, select {
+    font-family: var(--font-sans);
+    font-size: 14px;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    padding-left: 1.2em;
+}

@@ -1,0 +1,555 @@
+/* ── Step layout ── */
+.step {
+    animation: step-in 240ms ease both;
+}
+
+.step--centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+}
+
+@keyframes step-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.step__header {
+    margin-bottom: 32px;
+}
+
+.step__eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-accent);
+    margin-bottom: 6px;
+}
+
+.step__title {
+    font-family: var(--font-serif);
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.step__subtitle {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    max-width: 560px;
+    line-height: 1.6;
+}
+
+.step__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ── Cards ── */
+.card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.card__header {
+    padding: 20px 28px 16px;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.card__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.card__meta {
+    font-size: 12px;
+    color: var(--color-text-muted);
+}
+
+.card__body {
+    padding: 24px 28px;
+}
+
+/* ── Fields ── */
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.field--full {
+    grid-column: 1 / -1;
+}
+
+.field__label {
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.field__input {
+    height: 38px;
+    padding: 0 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: 14px;
+    transition: border-color var(--transition), box-shadow var(--transition);
+    width: 100%;
+}
+
+.field__input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px var(--color-accent-light);
+}
+
+.field__input--small {
+    width: auto;
+    max-width: 220px;
+}
+
+.field__textarea {
+    padding: 10px 12px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    font-size: 14px;
+    resize: vertical;
+    transition: border-color var(--transition), box-shadow var(--transition);
+    width: 100%;
+    line-height: 1.5;
+}
+
+.field__textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px var(--color-accent-light);
+}
+
+.field__input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.field__input-group .field__input {
+    width: 120px;
+}
+
+.field__unit {
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+.field__prev {
+    font-size: 11.5px;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+/* ── Biometrics grid ── */
+.biometrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+/* ── Country select ── */
+.country-select {
+    position: relative;
+}
+
+.country-select__dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    z-index: 200;
+    list-style: none;
+    overflow: hidden;
+    max-height: 240px;
+    overflow-y: auto;
+}
+
+.country-select__option {
+    padding: 10px 16px;
+    font-size: 13.5px;
+    cursor: pointer;
+    transition: background var(--transition);
+}
+
+.country-select__option:hover {
+    background: var(--color-surface-muted);
+}
+
+/* ── Yes/No questions ── */
+.yn-question {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.yn-question:last-child {
+    border-bottom: none;
+}
+
+.yn-question__label {
+    font-size: 14px;
+    color: var(--color-text);
+    line-height: 1.5;
+}
+
+.yn-question__options {
+    display: flex;
+    gap: 10px;
+}
+
+.yn-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 7px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 100px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all var(--transition);
+    user-select: none;
+}
+
+.yn-option input[type=radio] {
+    display: none;
+}
+
+.yn-option--selected {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+/* ── Goals form ── */
+.goals-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* ── Goals display ── */
+.goals-grid {
+    display: flex;
+    gap: 0;
+}
+
+.goals-divider {
+    width: 1px;
+    background: var(--color-border);
+    margin: 0 24px;
+}
+
+.goals-column {
+    flex: 1;
+}
+
+.goals-column__heading {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    margin-bottom: 4px;
+}
+
+.goals-column__when {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.goals-list {
+    font-size: 13.5px;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    padding-left: 18px;
+}
+
+.goals-column__note {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+/* ── Measurement items ── */
+.measurement-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-border);
+    font-size: 14px;
+}
+
+.measurement-item:last-child {
+    border-bottom: none;
+}
+
+.measurement-item__label {
+    color: var(--color-text);
+}
+
+.measurement-item__badge {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 9px;
+    border-radius: 100px;
+    background: #fff3cd;
+    color: #856404;
+}
+
+/* ── Checkbox ── */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-accent);
+    cursor: pointer;
+}
+
+/* ── Action buttons ── */
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+/* ── Buttons ── */
+.btn {
+    padding: 9px 22px;
+    border-radius: var(--radius-sm);
+    font-size: 13.5px;
+    font-weight: 500;
+    border: none;
+    transition: all var(--transition);
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: var(--color-accent);
+    color: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn--primary:hover {
+    background: #234a32;
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+}
+
+.btn--outline {
+    background: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+}
+
+.btn--outline:hover {
+    background: var(--color-surface-muted);
+}
+
+.btn--success {
+    background: #27ae60;
+    color: white;
+}
+
+/* ── Email send ── */
+.email-send-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+/* ── Email preview ── */
+.preview-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    margin-bottom: 10px;
+}
+
+.email-preview {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    background: var(--color-surface);
+    overflow: hidden;
+}
+
+.email-preview__subject {
+    padding: 16px 24px;
+    font-size: 13px;
+    color: var(--color-text-muted);
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-surface-muted);
+}
+
+.email-section {
+    padding: 20px 24px;
+}
+
+.email-section__title {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-text-muted);
+    margin-bottom: 14px;
+}
+
+.email-divider {
+    height: 1px;
+    background: var(--color-border);
+    margin: 0 24px;
+}
+
+.email-bio-row {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+}
+
+.email-bio-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.email-bio-item__label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+}
+
+.email-bio-item__value {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.email-goals-row {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.email-goals-heading {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    margin-bottom: 4px;
+}
+
+.email-info-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--color-border);
+    gap: 16px;
+    font-size: 13.5px;
+}
+
+.email-info-row:last-child {
+    border-bottom: none;
+}
+
+.email-info-row__question {
+    color: var(--color-text);
+    flex: 1;
+}
+
+.email-info-row__answer {
+    font-weight: 600;
+    color: var(--color-accent);
+    min-width: 28px;
+    text-align: right;
+}
+
+.email-info-row__answer.unanswered {
+    color: var(--color-text-muted);
+    font-weight: 400;
+}
+
+/* ── Done page ── */
+.done-icon {
+    font-size: 48px;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+    animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(0.95); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+    .biometrics-grid {
+        grid-template-columns: 1fr;
+    }
+    .goals-form-grid {
+        grid-template-columns: 1fr;
+    }
+    .goals-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .goals-divider {
+        width: 100%;
+        height: 1px;
+        margin: 0;
+    }
+    .step__title {
+        font-size: 26px;
+    }
+}
